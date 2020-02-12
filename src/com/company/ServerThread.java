@@ -21,9 +21,6 @@ public class ServerThread extends Thread{
             InputStream input = socket.getInputStream();
             BufferedReader reader = new BufferedReader(new InputStreamReader(input));
 
-            OutputStream out = socket.getOutputStream();
-            PrintWriter writer = new PrintWriter(out, true);
-
             String text;
 
             do{
